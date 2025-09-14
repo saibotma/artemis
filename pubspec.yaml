@@ -4,6 +4,8 @@ version: 7.13.1
 description: Build dart types from GraphQL schemas and queries (using Introspection Query).
 homepage: https://github.com/comigor/artemis
 
+publish_to: none
+
 environment:
   sdk: ">=2.18.0 <3.0.0"
 
@@ -15,7 +17,11 @@ dependencies:
   dart_style: ^3.0.0
   equatable: ^2.0.5
   glob: ^2.1.1
-  gql_code_builder: ^0.13.1
+  gql_code_builder:
+    git:
+      url: https://github.com/luansilva-tokenlab/gql
+      ref: 6eb5ad5fb9602bc33eaeb308fe70bdb869b34d92
+      path: codegen/gql_code_builder
   gql_dedupe_link: ^2.0.3+1
   gql_exec: '>=0.4.1 <=2.0.0'
   gql_http_link: '>=0.4.5 <=2.0.0'
