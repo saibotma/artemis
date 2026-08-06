@@ -17,11 +17,11 @@ dependencies:
   dart_style: ^3.0.0
   equatable: ^2.0.5
   glob: ^2.1.1
-  # Required to support analyzer >= 9
+  # Required to support analyzer >= 9 and < 14.
   gql_code_builder:
     git:
       url: https://github.com/gql-dart/gql
-      ref: 5d2850d486ee0e1f0ceba0e81c8a3ce3d2ee6c12
+      ref: 03c210f87906d611c5cc506c5f4d15b1702b0225
       path: codegen/gql_code_builder
   gql_dedupe_link: ^2.0.3+1
   gql_exec: '>=0.4.1 <=2.0.0'
